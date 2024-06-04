@@ -1,0 +1,78 @@
+* {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+
+  &:hover {
+    // text-decoration: none;
+    color: inherit;
+  }
+}
+
+a,
+button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+input {
+  outline: none;
+  box-shadow: none;
+}
+
+ul,
+ol {
+  // list-style: none;
+  padding: 0;
+  margin: 0;
+  display: block;
+}
+
+h1,
+figure,
+blockquote,
+p,
+label,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+//scroll bar
+/* width */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 0px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #0934f3;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

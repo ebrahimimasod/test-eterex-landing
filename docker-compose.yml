@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  eterexlanding:
+    image: eterex-landing:1.0.15
+    ports:
+      - '3000:3000'
+    command: /bin/bash -c "npm start"
+    restart: unless-stopped
+    environment:
+      - NODE_ENV=production
+      - BASE_URL=https://blog.eterex.net/api/wp/v2
+      - PANEL_URL=https://panel.eterex.com/
+      - API_URL=https://api.eterex.com/api
+      - SOCKET_URL=wss://stream.eterex.com

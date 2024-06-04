@@ -1,0 +1,88 @@
+@import './_variables.scss';
+@import './normalize';
+@import './reset';
+@import './icons';
+@import './direction';
+@import './grid';
+@import './svg';
+@import './typography';
+@import './text';
+@import './sizing';
+
+html,
+body {
+  direction: $layout-direction;
+  text-align: $layout-align;
+  font-family: 'YekanBakh', serif !important;
+  font-size: 16px;
+  color: var(--color-2);
+  background-color: var(--color-10);
+  margin: 0;
+  // letter-spacing: -1;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+button,
+a,
+span {
+  line-height: 1.5 !important;
+  // letter-spacing: -1;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'YekanBakh', serif !important;
+  // letter-spacing: -1;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 12px;
+  height: 0;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #b6b6b6;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #2a62ff;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+::placeholder {
+  font-family: 'YekanBakh', serif !important;
+}
+
+.Vue-Toastification__toast {
+  font-family: 'YekanBakh', serif !important;
+  direction: rtl;
+  display: flex !important;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Vue-Toastification__icon {
+  margin: 10px;
+}
+
+.Vue-Toastification__close-button {
+  padding-left: 0;
+  padding-right: 15px;
+}

@@ -1,0 +1,27 @@
+{
+  "type": "module",
+  "name": "xmlsitemap",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./build/index.js",
+  "scripts": {
+    "generate-sitemap": "node ./build/index.js",
+    "serve": "http-server",
+    "clear": "rm -rf build",
+    "build": "npm run clear && tsc --build"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@open-tech-world/cli-progress-bar": "^2.0.2",
+    "@types/node-cron": "^3.0.7",
+    "axios": "^1.3.2",
+    "node-cron": "^3.0.2",
+    "typescript": "^4.2.3",
+    "xml": "^1.0.1"
+  },
+  "devDependencies": {
+    "@types/xml": "^1.0.5",
+    "http-server": "^14.1.1"
+  }
+}

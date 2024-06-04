@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "isolatedModules": true,
+    "strict": true,
+    "module": "esnext",
+    "lib": ["ES2019"],
+    "moduleResolution": "node",
+    "skipLibCheck": true,
+    "outDir": "build",
+  },
+  "include": ["./src/index.ts"],
+  "exclude": ["node_modules/**/*"]
+}

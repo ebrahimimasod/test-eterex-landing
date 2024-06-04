@@ -1,0 +1,90 @@
+// based on bootstrap mobile first breakpoints.
+@mixin respond($breakpoint) {
+  @if $breakpoint==hss {
+
+    // Extra Small devices (landscape phones, 320px and up)
+    @media (min-height: 400.99px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint==hs {
+
+    // Extra Small devices (landscape phones, 320px and up)
+    @media (min-height: 500.99px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint==hm {
+
+    // Extra Small devices (landscape phones, 320px and up)
+    @media (min-height: 652.99px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint==hl {
+
+    // Extra Small devices (landscape phones, 320px and up)
+    @media (min-height: 837.99px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint==hxl {
+
+    // Extra Small devices (landscape phones, 320px and up)
+    @media (min-height: 1000.99px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint==xxs {
+
+    // Extra Small devices (landscape phones, 320px and up)
+    @media (max-width: 319.99px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint==xs {
+
+    // Extra Small devices (landscape phones, 320px and up)
+    @media (min-width: 340px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint==sm {
+
+    // Small devices (landscape phones, 576px and up)
+    @media (min-width: 576px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint==md {
+
+    // Medium devices (tablets, 768px and up)
+    @media (min-width: 768px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint==lg {
+
+    // Large devices (desktops, 992px and up)
+    @media (min-width: 992px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint==xl {
+
+    // Extra large devices (large desktops, 1200px and up)
+    @media (min-width: 1200px) {
+      @content;
+    }
+  }
+}
